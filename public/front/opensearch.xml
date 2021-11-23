@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>YTS Torrents - YTS.MX - The Official Home of YIFY Movie Torrent Downloads</ShortName>
+    <Image width="16" height="16">https://yts.mx/assets/images/website/favicon.ico</Image>
+    <Url type="text/html" template="https://yts.mx/browse-movies/{searchTerms}/all/all/0/latest/0/all" />
+    <Tags>yts, yify, yts yify, yts torrents, yify torrents</Tags>
+</OpenSearchDescription>
