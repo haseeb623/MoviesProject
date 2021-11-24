@@ -449,6 +449,7 @@
                <h2>Latest HW Movies  <a href="browse-movies.html">Browse All</a></h2>
             </div>
             lkjdlsakjd
+            dddddd
            
             <div class="row">
              @foreach($moviesArray as $val)
