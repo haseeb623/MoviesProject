@@ -445,15 +445,18 @@
    <div class="content-dark">
       <div class="container home-content">
          <div class="home-movies">
-            <div class="row">
+            <div class="row movie-list">
                <h2>Latest HW Movies  <a href="browse-movies.html">Browse All</a></h2>
             </div>
             <div class="row">
+             @foreach($moviesArray as $val)
                <div class="browse-movie-wrap col-xs-10 col-sm-5">
                   <a href="movies/conscience-point-2019.html" class="browse-movie-link">
                      <figure>
-                        <img class="img-responsive" src="{{asset('front/img.yts.mx/assets/images/movies/conscience_point_2019/medium-cover.jpg')}}" alt="Conscience Point (2019) download" width="210" height="315" />
-                        <img class="quality-banner img-responsive" src="{{asset('front/assets/images/website/banner1080p.png')}}" alt="Conscience Point (2019) download 1080p" width="118" height="91">
+                        <img class="img-responsive" src="{{$val['large_cover_image']}}" alt="Conscience Point (2019) download" width="210" height="315" />
+                     
+                        <!-- <img class="img-responsive" src="{{asset('front/img.yts.mx/assets/images/movies/conscience_point_2019/medium-cover.jpg')}}" alt="Conscience Point (2019) download" width="210" height="315" /> -->
+                        <!-- <img class="quality-banner img-responsive" src="{{asset('front/assets/images/website/banner1080p.png')}}" alt="Conscience Point (2019) download 1080p" width="118" height="91"> -->
                         <figcaption class="hidden-xs hidden-sm">
                            <span class="icon-star"></span>
                            <h4 class="rating">7 / 10</h4>
@@ -463,11 +466,12 @@
                      </figure>
                   </a>
                   <div class="browse-movie-bottom">
-                     <a href="movies/conscience-point-2019.html" class="browse-movie-title">Conscience Point</a>
+                     <a href="movies/conscience-point-2019.html" class="browse-movie-title">{{$val['title']}}</a>
                      <div class="browse-movie-year">2019</div>
                   </div>
                </div>
-               <div class="browse-movie-wrap col-xs-10 col-sm-5">
+               @endforeach 
+               <!-- <div class="browse-movie-wrap col-xs-10 col-sm-5">
                   <a href="movies/determination-of-death-2001.html" class="browse-movie-link">
                      <figure>
                         <img class="img-responsive" src="{{asset('front/img.yts.mx/assets/images/movies/determination_of_death_2001/medium-cover.jpg')}}" alt="Determination of Death (2001) download" width="210" height="315" />
@@ -485,8 +489,8 @@
                      <a href="movies/determination-of-death-2001.html" class="browse-movie-title"><span style="color: #ACD7DE; font-size: 75%;">[FR]</span> Determination of Death</a>
                      <div class="browse-movie-year">2001</div>
                   </div>
-               </div>
-               <div class="browse-movie-wrap col-xs-10 col-sm-5">
+               </div> -->
+               <!-- <div class="browse-movie-wrap col-xs-10 col-sm-5">
                   <a href="movies/castle-of-owls-1963.html" class="browse-movie-link">
                      <figure>
                         <img class="img-responsive" src="{{asset('front/img.yts.mx/assets/images/movies/castle_of_owls_1963/medium-cover.jpg')}}" alt="Castle of Owls (1963) download" width="210" height="315" />
@@ -503,8 +507,8 @@
                      <a href="movies/castle-of-owls-1963.html" class="browse-movie-title"><span style="color: #ACD7DE; font-size: 75%;">[JA]</span> Castle of Owls</a>
                      <div class="browse-movie-year">1963</div>
                   </div>
-               </div>
-               <div class="browse-movie-wrap col-xs-10 col-sm-5">
+               </div> -->
+               <!-- <div class="browse-movie-wrap col-xs-10 col-sm-5">
                   <a href="movies/perilous-2000.html" class="browse-movie-link">
                      <figure>
                         <img class="img-responsive" src="{{asset('front/img.yts.mx/assets/images/movies/perilous_2000/medium-cover.jpg')}}" alt="Perilous (2000) download" width="210" height="315" />
@@ -522,8 +526,8 @@
                      <div class="browse-movie-year">2000</div>
                   </div>
                </div>
-            </div>
-            <div class="row">
+            </div> -->
+            <!-- <div class="row">
                <div class="browse-movie-wrap col-xs-10 col-sm-5">
                   <a href="movies/the-heart-of-the-matter-1953.html" class="browse-movie-link">
                      <figure>
@@ -541,8 +545,8 @@
                      <a href="movies/the-heart-of-the-matter-1953.html" class="browse-movie-title">The Heart of the Matter</a>
                      <div class="browse-movie-year">1953</div>
                   </div>
-               </div>
-               <div class="browse-movie-wrap col-xs-10 col-sm-5">
+               </div> -->
+               <!-- <div class="browse-movie-wrap col-xs-10 col-sm-5">
                   <a href="movies/the-book-of-vision-2020.html" class="browse-movie-link">
                      <figure>
                         <img class="img-responsive" src="{{asset('front/img.yts.mx/assets/images/movies/the_book_of_vision_2020/medium-cover.jpg')}}" alt="The Book of Vision (2020) download" width="210" height="315" />
@@ -560,8 +564,8 @@
                      <a href="movies/the-book-of-vision-2020.html" class="browse-movie-title">The Book of Vision</a>
                      <div class="browse-movie-year">2020</div>
                   </div>
-               </div>
-               <div class="browse-movie-wrap col-xs-10 col-sm-5">
+               </div> -->
+               <!-- <div class="browse-movie-wrap col-xs-10 col-sm-5">
                   <a href="movies/maximum-achievement-the-brian-tracy-story-2017.html" class="browse-movie-link">
                      <figure>
                         <img class="img-responsive" src="{{asset('front/img.yts.mx/assets/images/movies/maximum_achievement_the_brian_tracy_story_2017/medium-cover.jpg')}}" alt="Maximum Achievement: The Brian Tracy Story (2017) download" width="210" height="315" />
@@ -578,8 +582,8 @@
                      <a href="movies/maximum-achievement-the-brian-tracy-story-2017.html" class="browse-movie-title">Maximum Achievement: The Brian Tracy Story</a>
                      <div class="browse-movie-year">2017</div>
                   </div>
-               </div>
-               <div class="browse-movie-wrap col-xs-10 col-sm-5">
+               </div> -->
+               <!-- <div class="browse-movie-wrap col-xs-10 col-sm-5">
                   <a href="movies/fling-2008.html" class="browse-movie-link">
                      <figure>
                         <img class="img-responsive" src="{{asset('front/img.yts.mx/assets/images/movies/fling_2008/medium-cover.jpg')}}" alt="Fling (2008) download" width="210" height="315" />
@@ -597,9 +601,9 @@
                      <a href="movies/fling-2008.html" class="browse-movie-title">Fling</a>
                      <div class="browse-movie-year">2008</div>
                   </div>
-               </div>
-            </div>
-         </div>
+               </div> -->
+            <!-- </div>
+         </div> -->
       </div>
    </div>
    <div class="container home-content">
@@ -608,6 +612,7 @@
             <h2>Upcoming HW Movies <a href="login.html"></a></h2>
          </div>
          <div class="row">
+         @foreach($moviesArray as $val1)
             <div class="browse-movie-wrap col-xs-10 col-sm-5">
                <a href="https://www.imdb.com/title/tt3331846/" target="_blank" class="browse-movie-link">
                   <figure>
@@ -625,7 +630,7 @@
                   </div>
                </div>
             </div>
-            <div class="browse-movie-wrap col-xs-10 col-sm-5">
+            <!-- <div class="browse-movie-wrap col-xs-10 col-sm-5">
                <a href="https://www.imdb.com/title/tt0083352/" target="_blank" class="browse-movie-link">
                   <figure>
                      <img class="img-responsive" src="{{asset('front/img.yts.mx/assets/images/movies/dreadnaught_1981/medium-cover.jpg')}}" alt="Dreadnaught (1981)" width="210" height="315" />
@@ -683,7 +688,7 @@
                   </div>
                </div>
             </div>
-         </div>
+         </div> -->
       </div>
    </div>
    <div class="container hidden-md hidden-lg">
