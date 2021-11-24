@@ -471,7 +471,7 @@
                      <div class="browse-movie-year">2019</div>
                   </div>
                </div>
-            jjjjjjj
+         
                @endforeach 
                <!-- <div class="browse-movie-wrap col-xs-10 col-sm-5">
                   <a href="movies/determination-of-death-2001.html" class="browse-movie-link">
@@ -606,6 +606,7 @@
                </div> -->
             <!-- </div>
          </div> -->
+         hfsuahsjfnsaklfnsavksnvdvns
       </div>
    </div>
    <div class="container home-content">
